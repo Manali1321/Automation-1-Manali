@@ -1,0 +1,40 @@
+.navigation nav{
+  display: flex;
+  padding-left: 40px;
+  }
+  
+  .navigation >h1 {
+    padding-top: 0.2em;
+    margin-left: 15px;
+    text-shadow: 2px 2px 4px red;
+    font-size: 25px;
+  }
+  
+  .navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .nav{
+    padding:3px 3px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav li{
+    list-style: none;
+    color:#fff;
+    float: left;
+    text-decoration: none;
+    margin:2px 15px;
+  }
+  
+  .nav li a{
+    text-decoration: none;
+    color:#fff;
+    padding-bottom: 3px;
+  }

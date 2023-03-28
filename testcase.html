@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automation</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <h1>Automate Test Case Generator</h1>
+        <div class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Test Case</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div>
+          <form id="form" method="get" name="form">
+            <br /><br />
+            <label for="form__field">For which field you want Test Case?</label>
+            <input type="text" id="form__field" name="form__field" />
+            <span id="form__field_error" class="form__error"></span><br /><br />
+
+            <label for="form__pattern"
+              >Which RegEx Pattern you want to Test?</label
+            >
+            <input type="text" id="form__pattern" name="form__pattern" />
+            <span id="form__pattern_error" class="form__error"></span
+            ><br /><br />
+
+            <label for="form__testtype"
+              >Which type of test case you want?</label
+            >
+            <select id="form__testtype" name="form__type">
+              <option disabled selected>--Choose--</option>
+              <option>Test to Pass</option>
+              <option>Test to Fail</option>
+              <option>End-to-End Testing</option>
+              <option>Unit Testing</option>
+              <option>Smoke Testing</option>
+            </select>
+            <span id="form__testtype_error" class="form__error"></span
+            ><br /><br />
+
+            <label for="form__testcase">How many test cases you want?</label>
+            <input type="text" id="form__testcase" name="form__testcase" />
+            <span id="form__testcase_error" class="form__error"></span
+            ><br /><br />
+
+            <label for="form__spec">How many specs you want?</label>
+            <input type="text" id="form__spec" name="form__spec" />
+            <span id="form__spec_error" class="form__error"></span><br /><br />
+          </div>
+          
+          <div>
+            <button type="submit" value="Submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="./index.js" async defer></script>
+  </body>
+</html>

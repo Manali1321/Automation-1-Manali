@@ -50,13 +50,14 @@ function submitForm() {
       return false;
     }
 
-    if (!LetterAndNum.test(form__pattern.value)) {
+    if (!RegxForRegx.test(form__pattern.value)) {
       form__pattern_error.style.background = "red";
       form__pattern_error.style.color = "white";
       form__pattern_error.innerHTML = "*Please enter RegEX(Example: /^[A-Za-z]+$/) pattern only!";
       form__pattern.focus();
       return false;
     }
+
     if (form__testtype.value === '--Choose--') {
       form__testtype_error.style.background = "red";
       form__testtype_error.style.color = "white";
